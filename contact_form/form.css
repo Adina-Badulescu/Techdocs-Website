@@ -1,7 +1,10 @@
 
 
 body {
-    width: 250px;    font-family: roboto;
+    width: 100% !important; 
+    background-color: antiquewhite !important;
+    margin-left: 0;
+    font-family: roboto;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 15px;
@@ -9,9 +12,16 @@ body {
     text-transform: uppercase;
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    border: 2px red dashed;
+    display: block;
+    
+}
 
 #search_domain {
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }
 
 
