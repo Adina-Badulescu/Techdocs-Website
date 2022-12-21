@@ -8,11 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="FlameOnePage freebie theme for web startups by FairTech SEO." name="description" />
-    <meta content="FairTech" name="author" />
-
-    <script type="text/javascript" src="./vendor/jquery.1.9.1.min.js">alert("Qjery loaded");</script>
-
-
+    <meta content="" name="author" />
     <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -222,13 +218,12 @@
             <div class="row margin-b-40">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <h2>Modelli recenti</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore
-                        magna aliqua enim minim veniam exercitation</p>
+                    <p>Cerca il tuo modello, per esempio... </p>
                     <nav class="navbar navbar-light justify-content-center mt-4">
                         <form class="form-inline">
-                            <button type="button" class="btn btn-default btn-lg mr-3" id="btnSort">Cerca il tuo
-                                modello</button>
-                            <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Restaurante"
+                            <!-- <button type="button" class="btn btn-default btn-lg mr-3" id="btnSort">Cerca il tuo
+                                modello</button> -->
+                            <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="restaurante"
                                 aria-label="Ricerca" id="ricercas">
                         </form>
                     </nav>
@@ -245,10 +240,10 @@
                                 <img class="img-responsive" src="./img/templates/casino/ca.jpg"
                                     alt="Latest Products Image">
                             </div>
-                            <h4><a href="#">Casino</a> <span class="text-uppercase margin-l-20">Personalizzare</span>
+                            <h4>Casino <span class="text-uppercase margin-l-20">Personalizzare</span>
                             </h4>
                             <p>Once you select this template, press the below link for a guided process and details</p>
-                            <a class="link" href="./contact_form/form.html">Start</a>
+                            <a class="link" id="casino" onclick="selectedTemplate()">Start</a>
                         </div>
                     </div>
                     <!-- End Latest Products -->
@@ -260,10 +255,10 @@
                                 <img class="img-responsive" src="./img/templates/groceries/farmfresh.jpg"
                                     alt="Latest Products Image">
                             </div>
-                            <h4><a href="#">Verdura e frutta</a> <span
+                            <h4>Verdura e frutta <span
                                     class="text-uppercase margin-l-20">Personalizzare</span></h4>
                             <p>Once you select this template, press the below link for a guided process and details</p>
-                            <a class="link" href="#">Start</a>
+                            <a  class="link" id="farmfresh" onclick="selectedTemplate()" >Start</a>
                         </div>
                     </div>
                     <!-- End Latest Products -->
@@ -275,10 +270,58 @@
                                 <img class="img-responsive" src="./img/templates/medical/medinova.jpg"
                                     alt="Latest Products Image">
                             </div>
-                            <h4><a href="#">Centro medico</a> <span
+                            <h4>Centro medico <span
                                     class="text-uppercase margin-l-20">Personalizzare</span></h4>
                             <p>Once you select this template, press the below link for a guided process and details</p>
-                            <a class="link" href="#">Start</a>
+                            <a class="link" id="medinova" onclick="selectedTemplate()">Start</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Latest Products -->
+            </div>
+            <div class="row">
+                <!-- Latest Products -->
+                <div id="remove-card">
+                    <div class="card">
+                        <div class="card-body col-sm-4 sm-margin-b-50">
+                            <div class="margin-b-20">
+                                <img class="img-responsive" src="./img/templates/casino/ca.jpg"
+                                    alt="Latest Products Image">
+                            </div>
+                            <h4>Casino <span class="text-uppercase margin-l-20">Personalizzare</span>
+                            </h4>
+                            <p>Once you select this template, press the below link for a guided process and details</p>
+                            <a class="link" id="casino" onclick="selectedTemplate()">Start</a>
+                        </div>
+                    </div>
+                    <!-- End Latest Products -->
+
+                    <!-- Latest Products -->
+                    <div class="card">
+                        <div class="card-body col-sm-4 sm-margin-b-50">
+                            <div class="margin-b-20">
+                                <img class="img-responsive" src="./img/templates/groceries/farmfresh.jpg"
+                                    alt="Latest Products Image">
+                            </div>
+                            <h4>Verdura e frutta <span
+                                    class="text-uppercase margin-l-20">Personalizzare</span></h4>
+                            <p>Once you select this template, press the below link for a guided process and details</p>
+                            <a  class="link" id="farmfresh" onclick="selectedTemplate()" >Start</a>
+                        </div>
+                    </div>
+                    <!-- End Latest Products -->
+
+                    <!-- Latest Products -->
+                    <div class="card">
+                        <div class="card-body col-sm-4 sm-margin-b-50">
+                            <div class="margin-b-20">
+                                <img class="img-responsive" src="./img/templates/medical/medinova.jpg"
+                                    alt="Latest Products Image">
+                            </div>
+                            <h4>Centro medico <span
+                                    class="text-uppercase margin-l-20">Personalizzare</span></h4>
+                            <p>Once you select this template, press the below link for a guided process and details</p>
+                            <a class="link" id="medinova" onclick="selectedTemplate()">Start</a>
                         </div>
                     </div>
                 </div>
